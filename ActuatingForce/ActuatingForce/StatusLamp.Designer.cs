@@ -50,7 +50,7 @@
             // 
             this.picLamp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picLamp.Image = global::ActuatingForce.Properties.Resources.Status_Dot;
-            this.picLamp.Location = new System.Drawing.Point(0, 3);
+            this.picLamp.Location = new System.Drawing.Point(3, 3);
             this.picLamp.Name = "picLamp";
             this.picLamp.Size = new System.Drawing.Size(24, 24);
             this.picLamp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

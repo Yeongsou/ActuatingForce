@@ -33,7 +33,7 @@
             this.btn_Comm = new System.Windows.Forms.Button();
             this.btn_History = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
-            this.btn_System = new System.Windows.Forms.Button();
+            this.btn_Setting = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             this.panel2.Controls.Add(this.btn_Comm);
             this.panel2.Controls.Add(this.btn_History);
             this.panel2.Controls.Add(this.btn_Exit);
-            this.panel2.Controls.Add(this.btn_System);
+            this.panel2.Controls.Add(this.btn_Setting);
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1276, 66);
@@ -103,18 +103,18 @@
             this.btn_Exit.UseVisualStyleBackColor = false;
             this.btn_Exit.Click += new System.EventHandler(this.MenuClickEvent);
             // 
-            // btn_System
+            // btn_Setting
             // 
-            this.btn_System.BackColor = System.Drawing.Color.White;
-            this.btn_System.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_System.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_System.Location = new System.Drawing.Point(1121, 1);
-            this.btn_System.Name = "btn_System";
-            this.btn_System.Size = new System.Drawing.Size(77, 36);
-            this.btn_System.TabIndex = 177;
-            this.btn_System.Text = "설정";
-            this.btn_System.UseVisualStyleBackColor = false;
-            this.btn_System.Click += new System.EventHandler(this.MenuClickEvent);
+            this.btn_Setting.BackColor = System.Drawing.Color.White;
+            this.btn_Setting.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Setting.ForeColor = System.Drawing.Color.DarkGray;
+            this.btn_Setting.Location = new System.Drawing.Point(1121, 1);
+            this.btn_Setting.Name = "btn_Setting";
+            this.btn_Setting.Size = new System.Drawing.Size(77, 36);
+            this.btn_Setting.TabIndex = 177;
+            this.btn_Setting.Text = "설정";
+            this.btn_Setting.UseVisualStyleBackColor = false;
+            this.btn_Setting.Click += new System.EventHandler(this.MenuClickEvent);
             // 
             // panelChild
             // 
@@ -146,7 +146,7 @@
         private System.Windows.Forms.Button btn_Comm;
         private System.Windows.Forms.Button btn_History;
         private System.Windows.Forms.Button btn_Exit;
-        private System.Windows.Forms.Button btn_System;
+        private System.Windows.Forms.Button btn_Setting;
         private System.Windows.Forms.Panel panelChild;
     }
 }

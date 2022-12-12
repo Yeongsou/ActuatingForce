@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ActuatingForce
 {
-    public partial class frmDB : Form
+    public partial class frmHistory : Form
     {
-        public frmDB()
+        public frmHistory()
         {
             InitializeComponent();
         }

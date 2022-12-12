@@ -52,11 +52,11 @@
     <Compile Include="frmComm.Designer.cs">
       <DependentUpon>frmComm.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDB.cs">
+    <Compile Include="frmHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDB.Designer.cs">
-      <DependentUpon>frmDB.cs</DependentUpon>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -78,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusLamp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusLamp.Designer.cs">
+      <DependentUpon>StatusLamp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmComm.resx">
       <DependentUpon>frmComm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDB.resx">
-      <DependentUpon>frmDB.cs</DependentUpon>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -101,7 +107,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StatusLamp.resx">
+      <DependentUpon>StatusLamp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +124,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status_Dot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconCancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconCancel_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSave_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconZeroSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconZeroSet_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOpen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOpen_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFF_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON_GreenDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON_GreenLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Set.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status_Green_50.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status_Red_50.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusAni_Green_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusAni_Red_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusDarkGreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusDarkRed.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

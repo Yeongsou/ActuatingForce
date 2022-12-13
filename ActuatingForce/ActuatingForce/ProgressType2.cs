@@ -69,10 +69,30 @@ namespace UserControlCollection_1
         private _AngleRangeStyle AngleRangeVal;
         private _DecimalPlaces DecimalPlacesVal;
 
-
+        private Font _minmaxFont = new Font("굴림", 10);
+        private Color _minmaxForeColor = Color.DarkGray;
         #endregion
 
         #region Custom Properties
+
+        public Font MinMaxFont
+        {
+            get => this._minmaxFont;
+            set
+            {
+                this._minmaxFont = value;
+                Invalidate();
+            }
+        }
+        public Color MinMaxForeColor
+        {
+            get { return _minmaxForeColor; }
+            set
+            {
+                _minmaxForeColor = value;
+                Invalidate();
+            }
+        }
 
         public int Blank
         {
@@ -412,43 +432,53 @@ namespace UserControlCollection_1
                                                (int)Math.Round((double)((280 / ((double)this._Maximum - (double)this.Minimum)) * (this._Value-this.Minimum))) - 230 - 1, 2);
                         }
                     }
-                     
 
+
+                    // ===== Value 보여주기 //
                     StringFormat sf = new StringFormat
                     {
                         Alignment = StringAlignment.Center
                     };
-
-
                     string strDP = "";
-                    switch(DecimalPlacesVal)
-                        {
-                            case _DecimalPlaces.Non:
+                    switch (DecimalPlacesVal)
+                    {
+                        case _DecimalPlaces.Non:
                             strDP = "";
                             break;
 
-                            case _DecimalPlaces.첫번째:
+                        case _DecimalPlaces.첫번째:
                             strDP = "0.0";
                             break;
 
-                            case _DecimalPlaces.두번째:
+                        case _DecimalPlaces.두번째:
                             strDP = "0.00";
                             break;
 
-                            case _DecimalPlaces.세번째:
+                        case _DecimalPlaces.세번째:
                             strDP = "0.000";
                             break;
-                        }
-
-
+                    }
                     string strVal = (this._Value).ToString(strDP);
-
                     SizeF ms = graphics.MeasureString(Convert.ToString(strVal), this.Font);
                     float ms_X = this.Width / 2;
                     float ms_Y = this.Height - ms.Height + 5;
 
                     graphics.DrawString((this._Value).ToString(strDP), this.Font, new SolidBrush(this.ForeColor), ms_X, ms_Y, sf);
-                     
+
+
+
+
+                    // ===== Max / Min 값 보여주기 //
+                    SizeF msM = graphics.MeasureString(Convert.ToString(this._Minimum), this._minmaxFont);
+                    float mXL = (this.Width  * 0.25f)/2;
+                    float mXR = this.Height * 0.75f + mXL;
+                    float mY = this.Height * 0.75f;// - (msM.Height / 2); 
+
+                    graphics.DrawString((this._Minimum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXL, mY, sf);
+                    graphics.DrawString((this._Maximum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXR, mY, sf);
+
+
+
 
                     e.Graphics.DrawImage(bitmap, 0, 0);
                     graphics.Dispose();
@@ -457,6 +487,7 @@ namespace UserControlCollection_1
             }
         }
 
+         
 
 
         // 나누어진 마디에 따른 Color 값 세팅

@@ -35,12 +35,14 @@
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Setting = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btn_Home);
             this.panel2.Controls.Add(this.btn_Comm);
             this.panel2.Controls.Add(this.btn_History);
@@ -48,7 +50,7 @@
             this.panel2.Controls.Add(this.btn_Setting);
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1276, 66);
+            this.panel2.Size = new System.Drawing.Size(1276, 50);
             this.panel2.TabIndex = 3;
             // 
             // btn_Home
@@ -56,9 +58,9 @@
             this.btn_Home.BackColor = System.Drawing.Color.White;
             this.btn_Home.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Home.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_Home.Location = new System.Drawing.Point(857, 1);
+            this.btn_Home.Location = new System.Drawing.Point(857, 5);
             this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Size = new System.Drawing.Size(77, 36);
+            this.btn_Home.Size = new System.Drawing.Size(77, 40);
             this.btn_Home.TabIndex = 183;
             this.btn_Home.Text = "메인";
             this.btn_Home.UseVisualStyleBackColor = false;
@@ -69,9 +71,9 @@
             this.btn_Comm.BackColor = System.Drawing.Color.White;
             this.btn_Comm.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Comm.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_Comm.Location = new System.Drawing.Point(940, 1);
+            this.btn_Comm.Location = new System.Drawing.Point(940, 5);
             this.btn_Comm.Name = "btn_Comm";
-            this.btn_Comm.Size = new System.Drawing.Size(77, 36);
+            this.btn_Comm.Size = new System.Drawing.Size(77, 40);
             this.btn_Comm.TabIndex = 181;
             this.btn_Comm.Text = "통신";
             this.btn_Comm.UseVisualStyleBackColor = false;
@@ -82,9 +84,9 @@
             this.btn_History.BackColor = System.Drawing.Color.White;
             this.btn_History.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_History.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_History.Location = new System.Drawing.Point(1023, 1);
+            this.btn_History.Location = new System.Drawing.Point(1023, 5);
             this.btn_History.Name = "btn_History";
-            this.btn_History.Size = new System.Drawing.Size(92, 36);
+            this.btn_History.Size = new System.Drawing.Size(92, 40);
             this.btn_History.TabIndex = 180;
             this.btn_History.Text = "이력 조회";
             this.btn_History.UseVisualStyleBackColor = false;
@@ -95,9 +97,9 @@
             this.btn_Exit.BackColor = System.Drawing.Color.White;
             this.btn_Exit.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Exit.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_Exit.Location = new System.Drawing.Point(1211, 1);
+            this.btn_Exit.Location = new System.Drawing.Point(1211, 5);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(57, 36);
+            this.btn_Exit.Size = new System.Drawing.Size(57, 40);
             this.btn_Exit.TabIndex = 179;
             this.btn_Exit.Text = "종료";
             this.btn_Exit.UseVisualStyleBackColor = false;
@@ -108,9 +110,9 @@
             this.btn_Setting.BackColor = System.Drawing.Color.White;
             this.btn_Setting.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Setting.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_Setting.Location = new System.Drawing.Point(1121, 1);
+            this.btn_Setting.Location = new System.Drawing.Point(1121, 5);
             this.btn_Setting.Name = "btn_Setting";
-            this.btn_Setting.Size = new System.Drawing.Size(77, 36);
+            this.btn_Setting.Size = new System.Drawing.Size(77, 40);
             this.btn_Setting.TabIndex = 177;
             this.btn_Setting.Text = "설정";
             this.btn_Setting.UseVisualStyleBackColor = false;
@@ -119,10 +121,20 @@
             // panelChild
             // 
             this.panelChild.BackColor = System.Drawing.Color.White;
-            this.panelChild.Location = new System.Drawing.Point(2, 70);
+            this.panelChild.Location = new System.Drawing.Point(2, 54);
             this.panelChild.Name = "panelChild";
-            this.panelChild.Size = new System.Drawing.Size(1276, 888);
+            this.panelChild.Size = new System.Drawing.Size(1276, 904);
             this.panelChild.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(297, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 27);
+            this.label1.TabIndex = 184;
+            this.label1.Text = "작동력 검사 시스템";
             // 
             // frmMain
             // 
@@ -135,6 +147,7 @@
             this.Name = "frmMain";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -148,6 +161,7 @@
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Button btn_Setting;
         private System.Windows.Forms.Panel panelChild;
+        private System.Windows.Forms.Label label1;
     }
 }
 

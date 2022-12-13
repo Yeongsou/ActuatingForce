@@ -348,7 +348,8 @@ namespace UserControlCollection_1
             }
             else { }
 
-            
+
+            int offsetH = 10;       // 하단 텍스트 표시를 위한 여백
             double circleRatio = 0; // 좌측 상단 
             double zeroRatio = 0;   // 원의 크기 (값이 클 수록 원이 작어짐) 
             using (Bitmap bitmap = new Bitmap(this.Width, this.Height))

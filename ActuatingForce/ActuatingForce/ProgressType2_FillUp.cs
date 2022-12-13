@@ -1,14 +1,19 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UserControlCollection_1
+namespace ActuatingForce
 {
-    public partial class ProgressType2 : UserControl
+    public partial class ProgressType2_FillUp : UserControl
     {
-        public ProgressType2()
+        public ProgressType2_FillUp()
         {
             InitializeComponent();
 
@@ -17,7 +22,6 @@ namespace UserControlCollection_1
             MinimumSize = new Size(80, 80);
             DoubleBuffered = true;
         }
-
         #region Enums
 
         public enum _ProgressShape
@@ -27,8 +31,7 @@ namespace UserControlCollection_1
         }
 
         public enum _AngleRangeStyle
-        {
-            Non,
+        { 
             Auto,
             Manual
         }
@@ -55,25 +58,60 @@ namespace UserControlCollection_1
         private Double _Value;
         private Double _Maximum = 100;
         private Double _Minimum = 0;
-        private Color _ProgressColor1 = Color.FromArgb(146, 182, 69);
-        private Color _ProgressColor2 = Color.FromArgb(146, 182, 69);
-        private Color _ProgressColor3 = Color.FromArgb(146, 182, 69);
-        private Color _ProgressColor4 = Color.FromArgb(252, 159, 47);
-        private Color _ProgressColor5 = Color.FromArgb(252, 159, 47);
-        private Color _ProgressColor6 = Color.FromArgb(252, 159, 47);
-        private Color _ProgressColor7 = Color.FromArgb(252, 159, 47);
-        private Color _ProgressColor8 = Color.FromArgb(252, 159, 47);
-        private Color _ProgressColor9 = Color.FromArgb(225, 144, 148);
-        private Color _ProgressColor10 = Color.FromArgb(225, 144, 148);
+        private Color _ProgressColorBase = Color.Gray;
         private _ProgressShape ProgressShapeVal;
         private _AngleRangeStyle AngleRangeVal;
         private _DecimalPlaces DecimalPlacesVal;
 
         private Font _minmaxFont = new Font("굴림", 10);
         private Color _minmaxForeColor = Color.DarkGray;
+
+        private float _specUp = 0.0f;
+        private float _specLow = 0.0f;
+        private Color _specColorIn = Color.PaleGreen;
+        private Color _specColorOut = Color.Pink;
+
+
         #endregion
 
         #region Custom Properties
+
+        public float SpecUp
+        {
+            get { return _specUp; }
+            set
+            {
+                _specUp = value;
+                Invalidate();
+            }
+        }
+        public float SpecLow
+        {
+            get { return _specLow; }
+            set
+            {
+                _specLow = value;
+                Invalidate();
+            }
+        }
+        public Color SpecColor_IN
+        {
+            get { return _specColorIn; }
+            set
+            {
+                _specColorIn = value;
+                Invalidate();
+            }
+        }
+        public Color SpecColor_OUT
+        {
+            get { return _specColorOut; }
+            set
+            {
+                _specColorOut = value;
+                Invalidate();
+            }
+        }
 
         public Font MinMaxFont
         {
@@ -102,14 +140,14 @@ namespace UserControlCollection_1
                 blankVal = value;
                 Invalidate();
             }
-        }
+        } 
         public int AngleStart
         {
             get { return _startAngle; }
             set
             {
                 _startAngle = value;
-                Invalidate(); 
+                Invalidate();
             }
         }
         public int AngleRange
@@ -117,8 +155,8 @@ namespace UserControlCollection_1
             get { return _angleRange; }
             set
             {
-                _angleRange = value;                
-                Invalidate(); 
+                _angleRange = value;
+                Invalidate();
             }
         }
         public int DivideVal
@@ -163,96 +201,15 @@ namespace UserControlCollection_1
                 Invalidate();
             }
         }
-        public Color ProgressColor_01
+        public Color ProgressColorBase
         {
-            get { return _ProgressColor1; }
+            get { return _ProgressColorBase; }
             set
             {
-                _ProgressColor1 = value;
+                _ProgressColorBase = value;
                 Invalidate();
             }
-        }
-        public Color ProgressColor_02
-        {
-            get { return _ProgressColor2; }
-            set
-            {
-                _ProgressColor2 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_03
-        {
-            get { return _ProgressColor3; }
-            set
-            {
-                _ProgressColor3 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_04
-        {
-            get { return _ProgressColor4; }
-            set
-            {
-                _ProgressColor4 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_05
-        {
-            get { return _ProgressColor5; }
-            set
-            {
-                _ProgressColor5 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_06
-        {
-            get { return _ProgressColor6; }
-            set
-            {
-                _ProgressColor6 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_07
-        {
-            get { return _ProgressColor7; }
-            set
-            {
-                _ProgressColor7 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_08
-        {
-            get { return _ProgressColor8; }
-            set
-            {
-                _ProgressColor8 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_09
-        {
-            get { return _ProgressColor9; }
-            set
-            {
-                _ProgressColor9 = value;
-                Invalidate();
-            }
-        }
-        public Color ProgressColor_10
-        {
-            get { return _ProgressColor10; }
-            set
-            {
-                _ProgressColor10 = value;
-                Invalidate();
-            }
-        }
+        } 
 
         public _ProgressShape ProgressShape
         {
@@ -306,7 +263,7 @@ namespace UserControlCollection_1
 
         #endregion
 
-         
+
 
         private void SetStandardSize()
         {
@@ -336,7 +293,7 @@ namespace UserControlCollection_1
 
             // 게이지 라인 Round Style
             LineCap linecap;
-            if (ProgressShapeVal == _ProgressShape.Round ) linecap = LineCap.Round;            
+            if (ProgressShapeVal == _ProgressShape.Round) linecap = LineCap.Round;
             else linecap = LineCap.Flat;
 
 
@@ -344,15 +301,14 @@ namespace UserControlCollection_1
             if (AngleRangeVal == _AngleRangeStyle.Auto)
             {           // Divide       1     2     3     4     5     6     7     8     9    10
                 int[] startArr = { 0, -230, -230, -225, -230, -230, -225, -230, -230, -225, -230 };
-                int[] rangeArr = { 0,  280,  280,  270,  280,  280,  270,  280,  280,  270,  280 };
+                int[] rangeArr = { 0, 280, 280, 270, 280, 280, 270, 280, 280, 270, 280 };
 
                 _startAngle = startArr[_DivideVal];
-                _angleRange = rangeArr[_DivideVal]; 
+                _angleRange =  rangeArr[_DivideVal];
             }
             else { }
 
-
-            int offsetH = 10;       // 하단 텍스트 표시를 위한 여백
+             
             double circleRatio = 0; // 좌측 상단 
             double zeroRatio = 0;   // 원의 크기 (값이 클 수록 원이 작어짐) 
             using (Bitmap bitmap = new Bitmap(this.Width, this.Height))
@@ -361,35 +317,75 @@ namespace UserControlCollection_1
                 {
                     graphics.SmoothingMode = SmoothingMode.HighQuality;
                     graphics.Clear(this.BackColor);
-                    Color thisColor;
                     int thisOpacity = 255;
+
+
+                    // ===== Value Progress Color 적용 
+                    circleRatio = 0.7;
+                    zeroRatio = (1 - circleRatio) / 2;
+                    Color specColor;
+
+                    if (_Value <= _specUp && _Value >= _specLow) specColor = _specColorIn;
+                    else specColor = _specColorOut;
+
+                    float valueRange = (280 / ((float)this._Maximum - (float)this.Minimum));
+
+                    using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, specColor, specColor, LinearGradientMode.ForwardDiagonal))
+                    {
+                        using (Pen pen = new Pen(brush, Convert.ToInt32(2 + this.Width * 0.07)))
+                        {
+                            pen.StartCap = linecap;
+                            pen.EndCap = linecap;
+
+                            float reStartAngle;
+                            float reApplyAngle; 
+
+                            if (this._Minimum < 0 && this._Maximum >= 0)
+                            {
+                                reStartAngle = _startAngle - ((float)this.Minimum * valueRange);
+                                reApplyAngle = (float)_Value * valueRange;
+                            }
+                            else if ( this._Maximum < 0)
+                            {
+                                reStartAngle = _startAngle - ((float)(this.Minimum - this._Maximum) * valueRange) * 1;
+                                reApplyAngle = (float)_Value * valueRange - ((float)this._Maximum * valueRange);
+                            }
+                            else
+                            {
+                                reStartAngle = _startAngle;
+                                reApplyAngle = (float)_Value * valueRange;
+                            }
+
+                            graphics.DrawArc(pen, Convert.ToInt32(this.Width * zeroRatio), Convert.ToInt32(this.Width * zeroRatio),
+                                                (Convert.ToInt32(this.Width * circleRatio)), Convert.ToInt32(this.Width * circleRatio),
+                                                reStartAngle, reApplyAngle);
+                        }
+                    }
+
+
+
+                    // ===== Base(Guide) Progress Color 적용 
+
                     int beforeAngle = 0;
                     int afterAngle = 0;
                     int divideValue = _DivideVal;
-                    int divideAngle = 0;
+                    int divideAngle = 0; 
 
-
-                    // 마디 수량만큼 Line 그리기
+                        // 마디 수량만큼 Line 그리기
                     divideAngle = _angleRange / divideValue;
                     for (int i = 0; i < divideValue; i++)
                     {
                         // 마디 순서 별 범위 적용
                         beforeAngle = _startAngle + divideAngle * (i);
-                        afterAngle = divideAngle; 
-
-                        // 마디 순서 별 컬러 적용 
-                        thisColor = choiceColor(i+1);                         
-
+                        afterAngle = divideAngle;
+                         
 
                         // 마디 순서에 따라 Line 그리기
                         circleRatio = 0.7;
                         zeroRatio = (1 - circleRatio) / 2;
-                        using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
-                                                Color.FromArgb(thisOpacity, thisColor), Color.FromArgb(thisOpacity, thisColor),
-                                                LinearGradientMode.ForwardDiagonal))
+                        using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, _ProgressColorBase, _ProgressColorBase, LinearGradientMode.ForwardDiagonal))
                         {
-                           
-                            using (Pen pen = new Pen(brush, Convert.ToInt32(2 + this.Width * 0.02)))
+                            using (Pen pen = new Pen(brush, Convert.ToInt32(this.Width * 0.01)))
                             {
                                 pen.StartCap = linecap;
                                 pen.EndCap = linecap;
@@ -398,20 +394,22 @@ namespace UserControlCollection_1
                                                     beforeAngle + blankVal, afterAngle - blankVal * 2);
                             }
                         }
-                    } 
+                    }
+
 
 
                     // ===== Value 바늘 Circle //
                     circleRatio = 0.08;
                     zeroRatio = (1 - circleRatio) / 2;
+                    Color pinCircleColor = Color.Black;
                     using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
-                                               Color.FromArgb(thisOpacity, Color.Black), Color.FromArgb(thisOpacity, Color.Black),
+                                               Color.FromArgb(thisOpacity, pinCircleColor), Color.FromArgb(thisOpacity, pinCircleColor),
                                                LinearGradientMode.ForwardDiagonal))
                     {
                         using (Pen pen = new Pen(brush, 2))
                         {
                             pen.StartCap = linecap;
-                            pen.EndCap = linecap; 
+                            pen.EndCap = linecap;
 
                             graphics.DrawArc(pen, Convert.ToInt32(this.Width * zeroRatio), Convert.ToInt32(this.Width * zeroRatio),
                                                (Convert.ToInt32(this.Width * circleRatio)), Convert.ToInt32(this.Width * circleRatio),
@@ -420,20 +418,28 @@ namespace UserControlCollection_1
                     }
 
 
-                    // ===== Value 바늘//
+                    // ===== Value 바늘 //
                     circleRatio = 0.38;
                     zeroRatio = (1 - circleRatio) / 2;
+                    Color pinColor = Color.Black;
                     using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
-                                               Color.FromArgb(thisOpacity, Color.Black), Color.FromArgb(thisOpacity, Color.Black),
+                                               Color.FromArgb(thisOpacity, pinColor), Color.FromArgb(thisOpacity, pinColor),
                                                LinearGradientMode.ForwardDiagonal))
                     {
                         using (Pen pen = new Pen(brush, Convert.ToInt32(this.Width * 0.3)))
                         {
+                            float _offsetVal = 0.0f;
+
+                            if (_Minimum < 0) 
+                            {
+                                _offsetVal = valueRange * (float)_Minimum;
+                            }
+
                             pen.StartCap = LineCap.Flat;
-                            pen.EndCap = LineCap.Flat; 
+                            pen.EndCap = LineCap.Flat;
                             graphics.DrawArc(pen, Convert.ToInt32(this.Width * zeroRatio), Convert.ToInt32(this.Width * zeroRatio),
                                                (Convert.ToInt32(this.Width * circleRatio)), Convert.ToInt32(this.Width * circleRatio),
-                                               (int)Math.Round((double)((280 / ((double)this._Maximum - (double)this.Minimum)) * (this._Value-this.Minimum))) - 230 - 1, 2);
+                                               (int)Math.Round((double)(valueRange * this._Value - _offsetVal)) - 230 - 1, 2);
                         }
                     }
 
@@ -467,18 +473,18 @@ namespace UserControlCollection_1
                     float ms_X = this.Width / 2;
                     float ms_Y = this.Height - ms.Height + 2;
 
-                    graphics.DrawString((this._Value).ToString(strDP), this.Font, new SolidBrush(this.ForeColor), ms_X, ms_Y, sf);
+                    graphics.DrawString((this._Value).ToString(strDP), this.Font, new SolidBrush(specColor), ms_X, ms_Y, sf);
 
 
 
 
                     // ===== Max / Min 값 보여주기 //
                     SizeF msM = graphics.MeasureString(Convert.ToString(this._Minimum), this._minmaxFont);
-                    
+
                     float mTopX = (this.Width * 0.5f);
                     float mTopY = (this.Width * 0.3f) / 2;
 
-                    float mXL = (this.Width  * 0.3f)/2;
+                    float mXL = (this.Width * 0.3f) / 2;
                     float mXR = this.Width * 0.7f + mXL;
                     float mY = this.Height * 0.7f;
 
@@ -494,55 +500,8 @@ namespace UserControlCollection_1
             }
         }
 
+
          
-
-
-        // 나누어진 마디에 따른 Color 값 세팅
-        private Color choiceColor(int this_i)
-        {
-            if (this_i == 1)
-            {
-
-                return _ProgressColor1;
-            }
-            else if (this_i == 2)
-            {
-                return  _ProgressColor2;
-            }
-            else if (this_i == 3)
-            {
-                return  _ProgressColor3;
-            }
-            else if (this_i == 4)
-            {
-                return  _ProgressColor4;
-            }
-            else if (this_i == 5)
-            {
-                return  _ProgressColor5;
-            }
-            else if (this_i == 6)
-            {
-                return  _ProgressColor6;
-            }
-            else if (this_i == 7)
-            {
-                return  _ProgressColor7;
-            }
-            else if (this_i == 8)
-            {
-                return  _ProgressColor8;
-            }
-            else if (this_i == 9)
-            {
-                return  _ProgressColor9;
-            }
-            else
-            {
-                return  _ProgressColor10;
-            }
-        }
-
 
 
     }

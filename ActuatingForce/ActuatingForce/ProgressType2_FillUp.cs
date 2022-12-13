@@ -321,7 +321,7 @@ namespace ActuatingForce
 
 
                     // ===== Value Progress Color 적용 
-                    circleRatio = 0.7;
+                    circleRatio = 0.66;
                     zeroRatio = (1 - circleRatio) / 2;
                     Color specColor;
 
@@ -381,7 +381,7 @@ namespace ActuatingForce
                          
 
                         // 마디 순서에 따라 Line 그리기
-                        circleRatio = 0.7;
+                        circleRatio = 0.66;
                         zeroRatio = (1 - circleRatio) / 2;
                         using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, _ProgressColorBase, _ProgressColorBase, LinearGradientMode.ForwardDiagonal))
                         {
@@ -490,7 +490,7 @@ namespace ActuatingForce
 
                     graphics.DrawString((this._Minimum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXL, mY + 3, sf);
                     graphics.DrawString((this._Maximum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXR, mY + 3, sf);
-                    graphics.DrawString(((this._Maximum + this._Minimum) / 2).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mTopX, -1, sf);
+                    graphics.DrawString(((this._Maximum + this._Minimum) / 2).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mTopX, 0, sf);
 
 
                     e.Graphics.DrawImage(bitmap, 0, 0);

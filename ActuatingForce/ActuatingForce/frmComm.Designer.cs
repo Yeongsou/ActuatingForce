@@ -54,6 +54,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.progressType21 = new UserControlCollection_1.ProgressType2();
+            this.progressType2_FillUp8 = new ActuatingForce.ProgressType2_FillUp();
+            this.progressType2_FillUp1 = new ActuatingForce.ProgressType2_FillUp();
+            this.progressType2_FillUp7 = new ActuatingForce.ProgressType2_FillUp();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -79,6 +82,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.progressType2_FillUp8);
+            this.panel1.Controls.Add(this.progressType2_FillUp1);
+            this.panel1.Controls.Add(this.progressType2_FillUp7);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
@@ -502,6 +508,90 @@
             this.progressType21.TabIndex = 3;
             this.progressType21.Value = -10D;
             // 
+            // progressType2_FillUp8
+            // 
+            this.progressType2_FillUp8.AngleRange = 280;
+            this.progressType2_FillUp8.AngleRangeStyle = ActuatingForce.ProgressType2_FillUp._AngleRangeStyle.Auto;
+            this.progressType2_FillUp8.AngleStart = -230;
+            this.progressType2_FillUp8.Blank = 3;
+            this.progressType2_FillUp8.DecimalPlaces = ActuatingForce.ProgressType2_FillUp._DecimalPlaces.두번째;
+            this.progressType2_FillUp8.DivideVal = 10;
+            this.progressType2_FillUp8.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp8.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType2_FillUp8.Location = new System.Drawing.Point(822, 334);
+            this.progressType2_FillUp8.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.progressType2_FillUp8.Maximum = -20D;
+            this.progressType2_FillUp8.Minimum = -70D;
+            this.progressType2_FillUp8.MinimumSize = new System.Drawing.Size(80, 80);
+            this.progressType2_FillUp8.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp8.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType2_FillUp8.Name = "progressType2_FillUp8";
+            this.progressType2_FillUp8.ProgressColorBase = System.Drawing.Color.DarkGray;
+            this.progressType2_FillUp8.ProgressShape = ActuatingForce.ProgressType2_FillUp._ProgressShape.Flat;
+            this.progressType2_FillUp8.Size = new System.Drawing.Size(100, 110);
+            this.progressType2_FillUp8.SpecColor_IN = System.Drawing.Color.Khaki;
+            this.progressType2_FillUp8.SpecColor_OUT = System.Drawing.Color.PaleVioletRed;
+            this.progressType2_FillUp8.SpecLow = -20F;
+            this.progressType2_FillUp8.SpecUp = -5F;
+            this.progressType2_FillUp8.TabIndex = 30;
+            this.progressType2_FillUp8.Value = -70D;
+            // 
+            // progressType2_FillUp1
+            // 
+            this.progressType2_FillUp1.AngleRange = 280;
+            this.progressType2_FillUp1.AngleRangeStyle = ActuatingForce.ProgressType2_FillUp._AngleRangeStyle.Auto;
+            this.progressType2_FillUp1.AngleStart = -230;
+            this.progressType2_FillUp1.Blank = 3;
+            this.progressType2_FillUp1.DecimalPlaces = ActuatingForce.ProgressType2_FillUp._DecimalPlaces.두번째;
+            this.progressType2_FillUp1.DivideVal = 10;
+            this.progressType2_FillUp1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp1.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType2_FillUp1.Location = new System.Drawing.Point(475, 334);
+            this.progressType2_FillUp1.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.progressType2_FillUp1.Maximum = 60D;
+            this.progressType2_FillUp1.Minimum = 30D;
+            this.progressType2_FillUp1.MinimumSize = new System.Drawing.Size(80, 80);
+            this.progressType2_FillUp1.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp1.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType2_FillUp1.Name = "progressType2_FillUp1";
+            this.progressType2_FillUp1.ProgressColorBase = System.Drawing.Color.DarkGray;
+            this.progressType2_FillUp1.ProgressShape = ActuatingForce.ProgressType2_FillUp._ProgressShape.Flat;
+            this.progressType2_FillUp1.Size = new System.Drawing.Size(100, 110);
+            this.progressType2_FillUp1.SpecColor_IN = System.Drawing.Color.Khaki;
+            this.progressType2_FillUp1.SpecColor_OUT = System.Drawing.Color.PaleVioletRed;
+            this.progressType2_FillUp1.SpecLow = 10F;
+            this.progressType2_FillUp1.SpecUp = 20F;
+            this.progressType2_FillUp1.TabIndex = 28;
+            this.progressType2_FillUp1.Value = 15D;
+            // 
+            // progressType2_FillUp7
+            // 
+            this.progressType2_FillUp7.AngleRange = 280;
+            this.progressType2_FillUp7.AngleRangeStyle = ActuatingForce.ProgressType2_FillUp._AngleRangeStyle.Auto;
+            this.progressType2_FillUp7.AngleStart = -230;
+            this.progressType2_FillUp7.Blank = 3;
+            this.progressType2_FillUp7.DecimalPlaces = ActuatingForce.ProgressType2_FillUp._DecimalPlaces.두번째;
+            this.progressType2_FillUp7.DivideVal = 10;
+            this.progressType2_FillUp7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp7.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType2_FillUp7.Location = new System.Drawing.Point(643, 334);
+            this.progressType2_FillUp7.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.progressType2_FillUp7.Maximum = 30D;
+            this.progressType2_FillUp7.Minimum = -30D;
+            this.progressType2_FillUp7.MinimumSize = new System.Drawing.Size(80, 80);
+            this.progressType2_FillUp7.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType2_FillUp7.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType2_FillUp7.Name = "progressType2_FillUp7";
+            this.progressType2_FillUp7.ProgressColorBase = System.Drawing.Color.DarkGray;
+            this.progressType2_FillUp7.ProgressShape = ActuatingForce.ProgressType2_FillUp._ProgressShape.Flat;
+            this.progressType2_FillUp7.Size = new System.Drawing.Size(100, 110);
+            this.progressType2_FillUp7.SpecColor_IN = System.Drawing.Color.Khaki;
+            this.progressType2_FillUp7.SpecColor_OUT = System.Drawing.Color.PaleVioletRed;
+            this.progressType2_FillUp7.SpecLow = -10F;
+            this.progressType2_FillUp7.SpecUp = 20F;
+            this.progressType2_FillUp7.TabIndex = 29;
+            this.progressType2_FillUp7.Value = 10D;
+            // 
             // frmComm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -556,5 +646,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private UserControlCollection_1.ProgressType2 progressType21;
+        private ProgressType2_FillUp progressType2_FillUp8;
+        private ProgressType2_FillUp progressType2_FillUp1;
+        private ProgressType2_FillUp progressType2_FillUp7;
     }
 }

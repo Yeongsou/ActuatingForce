@@ -484,7 +484,7 @@ namespace UserControlCollection_1
 
                     graphics.DrawString((this._Minimum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXL, mY + 3, sf);
                     graphics.DrawString((this._Maximum).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mXR, mY + 3, sf);
-                    graphics.DrawString(((this._Maximum + this._Minimum) / 2).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mTopX, -1, sf);
+                    graphics.DrawString(((this._Maximum + this._Minimum) / 2).ToString(), this._minmaxFont, new SolidBrush(this._minmaxForeColor), mTopX, 0, sf);
 
 
                     e.Graphics.DrawImage(bitmap, 0, 0);

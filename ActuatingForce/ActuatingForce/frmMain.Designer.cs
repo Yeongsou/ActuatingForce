@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Home = new System.Windows.Forms.Button();
             this.btn_Comm = new System.Windows.Forms.Button();
             this.btn_History = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Setting = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1276, 50);
             this.panel2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(7, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(345, 27);
+            this.label1.TabIndex = 184;
+            this.label1.Text = "SEAT TRACK 작동력 검사";
             // 
             // btn_Home
             // 
@@ -125,16 +135,6 @@
             this.panelChild.Name = "panelChild";
             this.panelChild.Size = new System.Drawing.Size(1276, 904);
             this.panelChild.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(297, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 27);
-            this.label1.TabIndex = 184;
-            this.label1.Text = "작동력 검사 시스템";
             // 
             // frmMain
             // 

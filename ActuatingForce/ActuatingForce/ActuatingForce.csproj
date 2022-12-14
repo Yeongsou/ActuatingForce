@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +78,7 @@
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="SynchronizedInvokeExtension.cs" />
     <Compile Include="ProgressType2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +98,7 @@
     <Compile Include="StatusLamp.Designer.cs">
       <DependentUpon>StatusLamp.cs</DependentUpon>
     </Compile>
+    <Compile Include="testGraphTimer.cs" />
     <EmbeddedResource Include="frmComm.resx">
       <DependentUpon>frmComm.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,5 +218,6 @@
   <ItemGroup>
     <None Include="Resources\StatusDarkRed.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

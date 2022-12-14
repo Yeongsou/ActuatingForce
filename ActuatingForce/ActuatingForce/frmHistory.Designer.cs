@@ -31,12 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.progressType28 = new UserControlCollection_1.ProgressType2();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.progressType27 = new UserControlCollection_1.ProgressType2();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.progressType26 = new UserControlCollection_1.ProgressType2();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.progressType25 = new UserControlCollection_1.ProgressType2();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.progressType23 = new UserControlCollection_1.ProgressType2();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.progressType24 = new UserControlCollection_1.ProgressType2();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.progressType22 = new UserControlCollection_1.ProgressType2();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,13 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.progressType28 = new UserControlCollection_1.ProgressType2();
-            this.progressType27 = new UserControlCollection_1.ProgressType2();
-            this.progressType26 = new UserControlCollection_1.ProgressType2();
-            this.progressType25 = new UserControlCollection_1.ProgressType2();
-            this.progressType23 = new UserControlCollection_1.ProgressType2();
-            this.progressType24 = new UserControlCollection_1.ProgressType2();
-            this.progressType22 = new UserControlCollection_1.ProgressType2();
             this.progressType21 = new UserControlCollection_1.ProgressType2();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -109,6 +109,40 @@
             this.panel9.Size = new System.Drawing.Size(106, 116);
             this.panel9.TabIndex = 22;
             // 
+            // progressType28
+            // 
+            this.progressType28.AngleRange = 280;
+            this.progressType28.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType28.AngleStart = -230;
+            this.progressType28.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType28.Blank = 2;
+            this.progressType28.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType28.DivideVal = 10;
+            this.progressType28.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType28.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType28.Location = new System.Drawing.Point(3, 3);
+            this.progressType28.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType28.Maximum = 50D;
+            this.progressType28.Minimum = 0D;
+            this.progressType28.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType28.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType28.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType28.Name = "progressType28";
+            this.progressType28.ProgressColor_01 = System.Drawing.Color.Red;
+            this.progressType28.ProgressColor_02 = System.Drawing.Color.Red;
+            this.progressType28.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType28.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType28.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType28.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType28.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType28.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType28.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType28.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType28.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType28.Size = new System.Drawing.Size(100, 110);
+            this.progressType28.TabIndex = 11;
+            this.progressType28.Value = 30D;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.SlateGray;
@@ -117,6 +151,40 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(106, 116);
             this.panel8.TabIndex = 21;
+            // 
+            // progressType27
+            // 
+            this.progressType27.AngleRange = 280;
+            this.progressType27.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType27.AngleStart = -230;
+            this.progressType27.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType27.Blank = 2;
+            this.progressType27.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType27.DivideVal = 10;
+            this.progressType27.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType27.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType27.Location = new System.Drawing.Point(3, 3);
+            this.progressType27.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType27.Maximum = 50D;
+            this.progressType27.Minimum = 0D;
+            this.progressType27.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType27.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType27.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType27.Name = "progressType27";
+            this.progressType27.ProgressColor_01 = System.Drawing.Color.Red;
+            this.progressType27.ProgressColor_02 = System.Drawing.Color.Red;
+            this.progressType27.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType27.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType27.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType27.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType27.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType27.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType27.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType27.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType27.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType27.Size = new System.Drawing.Size(100, 110);
+            this.progressType27.TabIndex = 11;
+            this.progressType27.Value = 45D;
             // 
             // panel7
             // 
@@ -127,6 +195,40 @@
             this.panel7.Size = new System.Drawing.Size(106, 116);
             this.panel7.TabIndex = 20;
             // 
+            // progressType26
+            // 
+            this.progressType26.AngleRange = 280;
+            this.progressType26.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType26.AngleStart = -230;
+            this.progressType26.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType26.Blank = 2;
+            this.progressType26.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType26.DivideVal = 10;
+            this.progressType26.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType26.ForeColor = System.Drawing.Color.Violet;
+            this.progressType26.Location = new System.Drawing.Point(3, 3);
+            this.progressType26.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType26.Maximum = 50D;
+            this.progressType26.Minimum = 0D;
+            this.progressType26.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType26.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType26.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType26.Name = "progressType26";
+            this.progressType26.ProgressColor_01 = System.Drawing.Color.Red;
+            this.progressType26.ProgressColor_02 = System.Drawing.Color.Red;
+            this.progressType26.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType26.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType26.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType26.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType26.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType26.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType26.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType26.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType26.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType26.Size = new System.Drawing.Size(100, 110);
+            this.progressType26.TabIndex = 11;
+            this.progressType26.Value = 7D;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.SlateGray;
@@ -135,6 +237,40 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(106, 116);
             this.panel6.TabIndex = 19;
+            // 
+            // progressType25
+            // 
+            this.progressType25.AngleRange = 280;
+            this.progressType25.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType25.AngleStart = -230;
+            this.progressType25.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType25.Blank = 2;
+            this.progressType25.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType25.DivideVal = 10;
+            this.progressType25.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType25.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType25.Location = new System.Drawing.Point(3, 3);
+            this.progressType25.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType25.Maximum = 50D;
+            this.progressType25.Minimum = 0D;
+            this.progressType25.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType25.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType25.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType25.Name = "progressType25";
+            this.progressType25.ProgressColor_01 = System.Drawing.Color.Red;
+            this.progressType25.ProgressColor_02 = System.Drawing.Color.Red;
+            this.progressType25.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType25.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType25.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType25.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType25.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType25.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType25.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType25.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType25.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType25.Size = new System.Drawing.Size(100, 110);
+            this.progressType25.TabIndex = 10;
+            this.progressType25.Value = 25D;
             // 
             // panel5
             // 
@@ -145,6 +281,40 @@
             this.panel5.Size = new System.Drawing.Size(106, 116);
             this.panel5.TabIndex = 18;
             // 
+            // progressType23
+            // 
+            this.progressType23.AngleRange = 280;
+            this.progressType23.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType23.AngleStart = -230;
+            this.progressType23.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType23.Blank = 2;
+            this.progressType23.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType23.DivideVal = 5;
+            this.progressType23.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType23.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType23.Location = new System.Drawing.Point(3, 3);
+            this.progressType23.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType23.Maximum = 500D;
+            this.progressType23.Minimum = 0D;
+            this.progressType23.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType23.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType23.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType23.Name = "progressType23";
+            this.progressType23.ProgressColor_01 = System.Drawing.Color.Red;
+            this.progressType23.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType23.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType23.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType23.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType23.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType23.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
+            this.progressType23.ProgressColor_08 = System.Drawing.Color.Red;
+            this.progressType23.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType23.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType23.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType23.Size = new System.Drawing.Size(100, 110);
+            this.progressType23.TabIndex = 5;
+            this.progressType23.Value = 250D;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.SlateGray;
@@ -154,6 +324,40 @@
             this.panel4.Size = new System.Drawing.Size(106, 116);
             this.panel4.TabIndex = 17;
             // 
+            // progressType24
+            // 
+            this.progressType24.AngleRange = 270;
+            this.progressType24.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType24.AngleStart = -225;
+            this.progressType24.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType24.Blank = 2;
+            this.progressType24.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType24.DivideVal = 6;
+            this.progressType24.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType24.ForeColor = System.Drawing.Color.Violet;
+            this.progressType24.Location = new System.Drawing.Point(3, 3);
+            this.progressType24.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType24.Maximum = 50D;
+            this.progressType24.Minimum = -50D;
+            this.progressType24.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType24.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType24.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType24.Name = "progressType24";
+            this.progressType24.ProgressColor_01 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType24.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType24.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType24.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType24.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType24.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType24.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
+            this.progressType24.ProgressColor_08 = System.Drawing.Color.Red;
+            this.progressType24.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType24.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType24.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType24.Size = new System.Drawing.Size(100, 110);
+            this.progressType24.TabIndex = 6;
+            this.progressType24.Value = -45D;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.SlateGray;
@@ -162,6 +366,40 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(106, 116);
             this.panel3.TabIndex = 16;
+            // 
+            // progressType22
+            // 
+            this.progressType22.AngleRange = 270;
+            this.progressType22.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
+            this.progressType22.AngleStart = -225;
+            this.progressType22.BackColor = System.Drawing.Color.SlateGray;
+            this.progressType22.Blank = 2;
+            this.progressType22.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
+            this.progressType22.DivideVal = 6;
+            this.progressType22.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType22.ForeColor = System.Drawing.Color.PaleGreen;
+            this.progressType22.Location = new System.Drawing.Point(3, 3);
+            this.progressType22.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
+            this.progressType22.Maximum = 30D;
+            this.progressType22.Minimum = -30D;
+            this.progressType22.MinimumSize = new System.Drawing.Size(88, 95);
+            this.progressType22.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.progressType22.MinMaxForeColor = System.Drawing.Color.Black;
+            this.progressType22.Name = "progressType22";
+            this.progressType22.ProgressColor_01 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType22.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType22.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType22.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressType22.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.progressType22.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.progressType22.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
+            this.progressType22.ProgressColor_08 = System.Drawing.Color.Red;
+            this.progressType22.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType22.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
+            this.progressType22.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
+            this.progressType22.Size = new System.Drawing.Size(100, 110);
+            this.progressType22.TabIndex = 4;
+            this.progressType22.Value = 5D;
             // 
             // label8
             // 
@@ -260,244 +498,6 @@
             this.panel2.Size = new System.Drawing.Size(106, 116);
             this.panel2.TabIndex = 15;
             // 
-            // progressType28
-            // 
-            this.progressType28.AngleRange = 280;
-            this.progressType28.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType28.AngleStart = -230;
-            this.progressType28.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType28.Blank = 2;
-            this.progressType28.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType28.DivideVal = 10;
-            this.progressType28.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType28.ForeColor = System.Drawing.Color.PaleGreen;
-            this.progressType28.Location = new System.Drawing.Point(3, 3);
-            this.progressType28.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType28.Maximum = 50D;
-            this.progressType28.Minimum = 0D;
-            this.progressType28.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType28.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType28.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType28.Name = "progressType28";
-            this.progressType28.ProgressColor_01 = System.Drawing.Color.Red;
-            this.progressType28.ProgressColor_02 = System.Drawing.Color.Red;
-            this.progressType28.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType28.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType28.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType28.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType28.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType28.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType28.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType28.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType28.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType28.Size = new System.Drawing.Size(100, 110);
-            this.progressType28.TabIndex = 11;
-            this.progressType28.Value = 30D;
-            // 
-            // progressType27
-            // 
-            this.progressType27.AngleRange = 280;
-            this.progressType27.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType27.AngleStart = -230;
-            this.progressType27.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType27.Blank = 2;
-            this.progressType27.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType27.DivideVal = 10;
-            this.progressType27.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType27.ForeColor = System.Drawing.Color.PaleGreen;
-            this.progressType27.Location = new System.Drawing.Point(3, 3);
-            this.progressType27.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType27.Maximum = 50D;
-            this.progressType27.Minimum = 0D;
-            this.progressType27.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType27.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType27.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType27.Name = "progressType27";
-            this.progressType27.ProgressColor_01 = System.Drawing.Color.Red;
-            this.progressType27.ProgressColor_02 = System.Drawing.Color.Red;
-            this.progressType27.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType27.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType27.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType27.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType27.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType27.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType27.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType27.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType27.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType27.Size = new System.Drawing.Size(100, 110);
-            this.progressType27.TabIndex = 11;
-            this.progressType27.Value = 45D;
-            // 
-            // progressType26
-            // 
-            this.progressType26.AngleRange = 280;
-            this.progressType26.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType26.AngleStart = -230;
-            this.progressType26.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType26.Blank = 2;
-            this.progressType26.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType26.DivideVal = 10;
-            this.progressType26.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType26.ForeColor = System.Drawing.Color.Violet;
-            this.progressType26.Location = new System.Drawing.Point(3, 3);
-            this.progressType26.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType26.Maximum = 50D;
-            this.progressType26.Minimum = 0D;
-            this.progressType26.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType26.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType26.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType26.Name = "progressType26";
-            this.progressType26.ProgressColor_01 = System.Drawing.Color.Red;
-            this.progressType26.ProgressColor_02 = System.Drawing.Color.Red;
-            this.progressType26.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType26.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType26.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType26.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType26.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType26.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType26.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType26.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType26.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType26.Size = new System.Drawing.Size(100, 110);
-            this.progressType26.TabIndex = 11;
-            this.progressType26.Value = 7D;
-            // 
-            // progressType25
-            // 
-            this.progressType25.AngleRange = 280;
-            this.progressType25.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType25.AngleStart = -230;
-            this.progressType25.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType25.Blank = 2;
-            this.progressType25.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType25.DivideVal = 10;
-            this.progressType25.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType25.ForeColor = System.Drawing.Color.PaleGreen;
-            this.progressType25.Location = new System.Drawing.Point(3, 3);
-            this.progressType25.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType25.Maximum = 50D;
-            this.progressType25.Minimum = 0D;
-            this.progressType25.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType25.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType25.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType25.Name = "progressType25";
-            this.progressType25.ProgressColor_01 = System.Drawing.Color.Red;
-            this.progressType25.ProgressColor_02 = System.Drawing.Color.Red;
-            this.progressType25.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType25.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType25.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType25.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType25.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType25.ProgressColor_08 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType25.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType25.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType25.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType25.Size = new System.Drawing.Size(100, 110);
-            this.progressType25.TabIndex = 10;
-            this.progressType25.Value = 25D;
-            // 
-            // progressType23
-            // 
-            this.progressType23.AngleRange = 280;
-            this.progressType23.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType23.AngleStart = -230;
-            this.progressType23.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType23.Blank = 2;
-            this.progressType23.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType23.DivideVal = 5;
-            this.progressType23.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType23.ForeColor = System.Drawing.Color.PaleGreen;
-            this.progressType23.Location = new System.Drawing.Point(3, 3);
-            this.progressType23.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType23.Maximum = 500D;
-            this.progressType23.Minimum = 0D;
-            this.progressType23.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType23.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType23.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType23.Name = "progressType23";
-            this.progressType23.ProgressColor_01 = System.Drawing.Color.Red;
-            this.progressType23.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType23.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType23.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType23.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType23.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType23.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
-            this.progressType23.ProgressColor_08 = System.Drawing.Color.Red;
-            this.progressType23.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType23.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType23.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType23.Size = new System.Drawing.Size(100, 110);
-            this.progressType23.TabIndex = 5;
-            this.progressType23.Value = 250D;
-            // 
-            // progressType24
-            // 
-            this.progressType24.AngleRange = 270;
-            this.progressType24.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType24.AngleStart = -225;
-            this.progressType24.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType24.Blank = 2;
-            this.progressType24.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType24.DivideVal = 6;
-            this.progressType24.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType24.ForeColor = System.Drawing.Color.Violet;
-            this.progressType24.Location = new System.Drawing.Point(3, 3);
-            this.progressType24.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType24.Maximum = 50D;
-            this.progressType24.Minimum = -50D;
-            this.progressType24.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType24.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType24.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType24.Name = "progressType24";
-            this.progressType24.ProgressColor_01 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType24.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType24.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType24.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType24.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType24.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType24.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
-            this.progressType24.ProgressColor_08 = System.Drawing.Color.Red;
-            this.progressType24.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType24.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType24.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType24.Size = new System.Drawing.Size(100, 110);
-            this.progressType24.TabIndex = 6;
-            this.progressType24.Value = -45D;
-            // 
-            // progressType22
-            // 
-            this.progressType22.AngleRange = 270;
-            this.progressType22.AngleRangeStyle = UserControlCollection_1.ProgressType2._AngleRangeStyle.Auto;
-            this.progressType22.AngleStart = -225;
-            this.progressType22.BackColor = System.Drawing.Color.SlateGray;
-            this.progressType22.Blank = 2;
-            this.progressType22.DecimalPlaces = UserControlCollection_1.ProgressType2._DecimalPlaces.두번째;
-            this.progressType22.DivideVal = 6;
-            this.progressType22.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType22.ForeColor = System.Drawing.Color.PaleGreen;
-            this.progressType22.Location = new System.Drawing.Point(3, 3);
-            this.progressType22.Margin = new System.Windows.Forms.Padding(7, 11, 7, 11);
-            this.progressType22.Maximum = 30D;
-            this.progressType22.Minimum = -30D;
-            this.progressType22.MinimumSize = new System.Drawing.Size(88, 95);
-            this.progressType22.MinMaxFont = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.progressType22.MinMaxForeColor = System.Drawing.Color.Black;
-            this.progressType22.Name = "progressType22";
-            this.progressType22.ProgressColor_01 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType22.ProgressColor_02 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType22.ProgressColor_03 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType22.ProgressColor_04 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressType22.ProgressColor_05 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.progressType22.ProgressColor_06 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.progressType22.ProgressColor_07 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(159)))), ((int)(((byte)(47)))));
-            this.progressType22.ProgressColor_08 = System.Drawing.Color.Red;
-            this.progressType22.ProgressColor_09 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType22.ProgressColor_10 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(144)))), ((int)(((byte)(148)))));
-            this.progressType22.ProgressShape = UserControlCollection_1.ProgressType2._ProgressShape.Flat;
-            this.progressType22.Size = new System.Drawing.Size(100, 110);
-            this.progressType22.TabIndex = 4;
-            this.progressType22.Value = 5D;
-            // 
             // progressType21
             // 
             this.progressType21.AngleRange = 270;
@@ -536,8 +536,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1276, 904);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1276, 871);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -20,6 +20,8 @@ namespace ActuatingForce
         string frmEnter = string.Empty;
         string frmBefore = "frmHome";
 
+        // 시간 표시 타이머
+        private static System.Timers.Timer theTime;
 
         public frmMain()
         {
@@ -31,6 +33,23 @@ namespace ActuatingForce
             this.frmHome.Parent = this.panelChild;
             this.frmHome.Show();
 
+
+            #region 시간 표시 타이머
+            theTime = new System.Timers.Timer(100);
+            theTime.Elapsed += OnTimeEvent;
+            theTime.AutoReset = true;
+            theTime.Enabled = true;
+            #endregion
+
+        }
+
+        private void OnTimeEvent(object sender, EventArgs e)
+        {
+            this.SynchronizedInvoke(() =>
+            {
+                txtTime.Text = System.DateTime.Now.ToString("HH:mm:ss");
+                txtDate.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+            });
         }
 
         private void MenuClickEvent(object sender, EventArgs e)
